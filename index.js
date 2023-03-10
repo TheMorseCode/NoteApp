@@ -69,7 +69,7 @@ const editNote = (noteDiv, editSave = false) => {
     deleteButton.onclick = () => cancelEdit(noteDiv);
     editButton.onclick = () => editNote(noteDiv, true);
 
-    if (editSavw) {
+    if (editSave) {
         const note = notes.find(note => note.id == noteDiv.id);
         note.title = titleP.innerText.trim();
         note.body = bodyP.innerText.trim();
